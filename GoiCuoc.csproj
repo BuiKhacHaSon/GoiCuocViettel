@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <StartupObject>GoiCuoc.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Home\css\animate.css" />
+    <None Include="wwwroot\Home\css\bootstrap.min.css" />
+    <None Include="wwwroot\Home\css\font-awesome.min.css" />
+    <None Include="wwwroot\Home\css\style.css" />
+    <None Include="wwwroot\Home\fonts\fontawesome-webfont.eot" />
+    <None Include="wwwroot\Home\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\Home\fonts\fontawesome-webfont.ttf" />
+    <None Include="wwwroot\Home\fonts\fontawesome-webfont.woff" />
+    <None Include="wwwroot\Home\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\Home\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="wwwroot\Home\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\Home\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="wwwroot\Home\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="wwwroot\Home\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\Home\images\1.png" />
+    <None Include="wwwroot\Home\images\p-1.png" />
+    <None Include="wwwroot\Home\images\p-2.png" />
+    <None Include="wwwroot\Home\images\p-3.png" />
+    <None Include="wwwroot\Home\images\p-4.png" />
+    <None Include="wwwroot\Home\images\p-5.png" />
+    <None Include="wwwroot\Home\images\p-6.png" />
+    <None Include="wwwroot\Home\images\p-7.png" />
+    <None Include="wwwroot\Home\images\p-8.png" />
+    <None Include="wwwroot\Home\images\slide-1.jpg" />
+    <None Include="wwwroot\Home\images\slide-2.jpg" />
+    <None Include="wwwroot\Home\images\slide-3.jpg" />
+    <None Include="wwwroot\Home\images\team-1.png" />
+    <None Include="wwwroot\Home\images\team-2.png" />
+    <None Include="wwwroot\Home\images\team-3.png" />
+    <None Include="wwwroot\Home\images\team-4.png" />
+    <None Include="wwwroot\Home\js\bootstrap.min.js" />
+    <None Include="wwwroot\Home\js\jquery-1.11.2.min.js" />
+    <None Include="wwwroot\Home\js\main.js" />
+    <None Include="wwwroot\Home\js\plugins.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.5" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+</Project>

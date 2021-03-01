@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    @*<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - GoiCuoc</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" />*@
+    <meta charset="utf-8">
+    @*<meta http-equiv="X-UA-Compatible" content="IE=edge">*@
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gói Cước Viettel</title>
+    <link rel="stylesheet" href="~/Home/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/Home/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/Home/css/animate.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="~/Home/css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito" rel="stylesheet">
+
+    <script type="text/javascript" src="~/Home/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="~/Home/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZXJBVDf7R4JqmSpopVPoduIGWx1IwpBM"></script>
+    <script type="text/javascript" src="~/Home/js/plugins.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+
+<section id="header">
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-fixed-top navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#header">TÊN TRANG WEB</a>
+            </div><!-- /.navbar-header -->
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#header">Trang chủ</a></li>
+                    <li><a href="#about">Giới thiệu</a></li>
+                    <li><a href="#portfolio">Hướng Dẫn</a></li>
+                    <li><a href="#items">Các gói cước</a></li>@*
+                        <li><a href="#info">Info</a></li>*@
+                    <li><a href="#contact">Liên hệ</a></li>
+                </ul>
+            </div> <!-- /.navbar-collapse -->
+        </div> <!-- /.container -->
+    </nav>
+
+    <!-- SLIDER -->
+
+    <div class="header-slide container-fluid ">
+        <section>
+            <div id="loader" class="pageload-overlay" data-opening="M 0,0 0,60 80,60 80,0 z M 80,0 40,30 0,60 40,30 z">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
+                    <path d="M 0,0 0,60 80,60 80,0 Z M 80,0 80,60 0,60 0,0 Z" />
+                </svg>
+            </div> <!-- /.pageload-overlay -->
+
+            <div class="image-slide bg-fixed">
+                <div class="overlay">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <div class="slider-content">
+                                    <h1></h1>
+                                    <p>Thông tin Demo 1</p>
+                                </div>
+
+                            </div> <!-- /.col-md-12 -->
+                        </div> <!-- /.row -->
+                    </div> <!-- /.container -->
+                </div> <!-- /.overlay -->
+            </div> <!-- /.image-slide -->
+
+            <nav class="nav-slide">
+                <a class="prev" href="#prev">
+                    <span class="icon-wrap">
+                        <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                            <use xlink:href="#arrow-left">
+                        </svg>
+                    </span>
+                    
+                </a>
+                <a class="next" href="#next">
+                    <span class="icon-wrap">
+                        <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                            <use xlink:href="#arrow-right">
+                        </svg>
+                    </span>
+                    
+                </a>
+            </nav>
+        </section>
+
+        <script type="text/javascript">
+            var dataHeader = [
+                {
+                    bigImage: "images/slide-1.jpg",
+                    title: "Tiêu Đề Demo 1",
+                    author: "Cái gì đó Demo 1"
+                },
+                {
+                    bigImage: "images/slide-2.jpg",
+                    title: "Tiêu Đề Demo 2",
+                    author: "Cái gì đó 2"
+                },
+                {
+                    bigImage: "images/slide-3.jpg",
+                    title: "Tiêu Đề Demo 2",
+                    author: "Cái gì đó 2"
+                }
+            ],
+                loaderSVG = new SVGLoader(document.getElementById('loader'), { speedIn: 200, speedOut: 200, easingIn: mina.easeinout });
+            loaderSVG.show()
+        </script>
+
+    </div><!-- /.header-slide -->
+</section>
+<body>
+   
+
+    <div class="container-fluid">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    @*<footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - GoiCuoc - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>*@
+    @*<script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @RenderSection("Scripts", required: false)
+    *@
+</body>
+</html>
